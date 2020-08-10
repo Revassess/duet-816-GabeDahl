@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="301b1120-4c15-41ea-a20f-e346d8471ca1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ecc4d827-f214-42e2-b4ca-5cc67db4a793.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ecc4d827-f214-42e2-b4ca-5cc67db4a793.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ecc4d827-f214-42e2-b4ca-5cc67db4a793/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ecc4d827-f214-42e2-b4ca-5cc67db4a793/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +35,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="JUnit.Answer2Tests.testSequence">
-    <configuration name="Answer1Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Revassess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.revature.tier2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.revature.tier2" />
-      <option name="MAIN_CLASS_NAME" value="com.revature.tier2.Answer1Tests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Answer3Tests.test3 (1)">
     <configuration name="Answer1Tests.test1 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revassess" />
       <extension name="coverage">
@@ -97,6 +84,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Answer3Tests.test3 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Revassess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revature.tier3.answers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revature.tier3.answers" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.tier3.answers.Answer3Tests" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Answer3Tests.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revassess" />
       <extension name="coverage">
@@ -115,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Answer3Tests.test3 (1)" />
         <item itemvalue="JUnit.Answer2Tests.testSequence" />
         <item itemvalue="JUnit.Answer1Tests.test1 (2)" />
         <item itemvalue="JUnit.Answer3Tests.test3" />
         <item itemvalue="JUnit.Answer2Tests.test2 (1)" />
-        <item itemvalue="JUnit.Answer1Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +144,7 @@
       <workItem from="1597088810390" duration="88000" />
       <workItem from="1597088912941" duration="2630000" />
       <workItem from="1597091586384" duration="534000" />
-      <workItem from="1597092130535" duration="307000" />
+      <workItem from="1597092130535" duration="1367000" />
     </task>
     <servers />
   </component>
@@ -157,22 +160,22 @@
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
     <state x="-1316" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092098449" />
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1597092183195">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1597092571764">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092183195" />
-    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1597092183194">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092571764" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1597092571764">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.center/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092183194" />
-    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1597092183193">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092571764" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1597092571763">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.left/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092183193" />
-    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1597092183194">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092571763" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1597092571764">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.right/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092183194" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597092571764" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597091566114">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
@@ -189,5 +192,13 @@
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597091566114" />
+    <state x="-1164" y="182" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1597093493638">
+      <screen x="-1920" y="-158" width="1920" height="1030" />
+    </state>
+    <state x="-1164" y="182" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597093493638" />
+    <state x="-1165" y="94" width="550" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1597093501315">
+      <screen x="-1920" y="-158" width="1920" height="1030" />
+    </state>
+    <state x="-1165" y="94" width="550" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597093501315" />
   </component>
 </project>
