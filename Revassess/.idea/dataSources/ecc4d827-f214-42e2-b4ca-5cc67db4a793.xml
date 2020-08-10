@@ -790,7 +790,7 @@ true posixrules
       <ObjectId>14008</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>username</Owner>
-      <IntrospectionStateNumber>699</IntrospectionStateNumber>
+      <IntrospectionStateNumber>712</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|16410|16412|1
 sequence|table|16423|16425|1
@@ -892,7 +892,7 @@ default_transaction_read_only=off</Config>
       <Comment>standard public schema</Comment>
       <StateNumber>610</StateNumber>
       <Owner>username</Owner>
-      <IntrospectionStateNumber>700</IntrospectionStateNumber>
+      <IntrospectionStateNumber>713</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="23" parent="2" name="btree">
@@ -1027,7 +1027,18 @@ default_transaction_read_only=off</Config>
       <Owner>username</Owner>
       <StateNumber>665</StateNumber>
     </table>
-    <column id="46" parent="40" name="user_id">
+    <routine id="46" parent="22" name="getabs">
+      <ObjectId>16527</ObjectId>
+      <Owner>username</Owner>
+      <SourceTextLength>60</SourceTextLength>
+      <StateNumber>711</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ArgumentsDefinition>val bigint, returnval bigint</ArgumentsDefinition>
+      <LanguageName>plpgsql</LanguageName>
+      <RoutineKind>procedure</RoutineKind>
+      <Cost>100.0</Cost>
+    </routine>
+    <column id="47" parent="40" name="user_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1035,67 +1046,67 @@ default_transaction_read_only=off</Config>
       <DefaultExpression>nextval(&apos;app_user_user_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="47" parent="40" name="username">
+    <column id="48" parent="40" name="username">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>649</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="48" parent="40" name="password">
+    <column id="49" parent="40" name="password">
       <Position>3</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>649</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="49" parent="40" name="first_name">
+    <column id="50" parent="40" name="first_name">
       <Position>4</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>649</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="50" parent="40" name="last_name">
+    <column id="51" parent="40" name="last_name">
       <Position>5</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>649</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="51" parent="40" name="role_id">
+    <column id="52" parent="40" name="role_id">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>662</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="52" parent="40" name="app_user_pk">
+    <index id="53" parent="40" name="app_user_pk">
       <ObjectId>16421</ObjectId>
       <StateNumber>662</StateNumber>
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="53" parent="40" name="app_user_user_id_uindex">
+    <index id="54" parent="40" name="app_user_user_id_uindex">
       <ObjectId>16419</ObjectId>
       <StateNumber>662</StateNumber>
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="54" parent="40" name="app_user_username_uindex">
+    <index id="55" parent="40" name="app_user_username_uindex">
       <ObjectId>16420</ObjectId>
       <StateNumber>662</StateNumber>
       <ColNames>username</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="55" parent="40" name="app_user_pk">
+    <key id="56" parent="40" name="app_user_pk">
       <ObjectId>16422</ObjectId>
       <StateNumber>654</StateNumber>
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>app_user_pk</UnderlyingIndexName>
     </key>
-    <foreign-key id="56" parent="40" name="role_id_fk">
+    <foreign-key id="57" parent="40" name="role_id_fk">
       <ObjectId>16444</ObjectId>
       <StateNumber>665</StateNumber>
       <ColNames>role_id</ColNames>
@@ -1105,7 +1116,7 @@ default_transaction_read_only=off</Config>
       <RefKeyName>user_role_pk</RefKeyName>
       <RefColNames>role_id</RefColNames>
     </foreign-key>
-    <column id="57" parent="41" name="category_id">
+    <column id="58" parent="41" name="category_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1113,34 +1124,34 @@ default_transaction_read_only=off</Config>
       <DefaultExpression>nextval(&apos;category_category_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="58" parent="41" name="name">
+    <column id="59" parent="41" name="name">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>694</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="59" parent="41" name="category_pk">
+    <index id="60" parent="41" name="category_pk">
       <ObjectId>16519</ObjectId>
       <StateNumber>694</StateNumber>
       <ColNames>category_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="60" parent="41" name="category_name_uindex">
+    <index id="61" parent="41" name="category_name_uindex">
       <ObjectId>16521</ObjectId>
       <StateNumber>695</StateNumber>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="61" parent="41" name="category_pk">
+    <key id="62" parent="41" name="category_pk">
       <ObjectId>16520</ObjectId>
       <StateNumber>694</StateNumber>
       <ColNames>category_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>category_pk</UnderlyingIndexName>
     </key>
-    <column id="62" parent="42" name="flashcard_id">
+    <column id="63" parent="42" name="flashcard_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1148,47 +1159,47 @@ default_transaction_read_only=off</Config>
       <DefaultExpression>nextval(&apos;flashcard_flashcard_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="63" parent="42" name="question">
+    <column id="64" parent="42" name="question">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>677</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="64" parent="42" name="answer">
+    <column id="65" parent="42" name="answer">
       <Position>3</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>677</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="65" parent="42" name="category_id">
+    <column id="66" parent="42" name="category_id">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>677</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="66" parent="42" name="flashcard_pk">
+    <index id="67" parent="42" name="flashcard_pk">
       <ObjectId>16499</ObjectId>
       <StateNumber>677</StateNumber>
       <ColNames>flashcard_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="67" parent="42" name="flashcard_question_uindex">
+    <index id="68" parent="42" name="flashcard_question_uindex">
       <ObjectId>16501</ObjectId>
       <StateNumber>678</StateNumber>
       <ColNames>question</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="68" parent="42" name="flashcard_pk">
+    <key id="69" parent="42" name="flashcard_pk">
       <ObjectId>16500</ObjectId>
       <StateNumber>677</StateNumber>
       <ColNames>flashcard_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>flashcard_pk</UnderlyingIndexName>
     </key>
-    <foreign-key id="69" parent="42" name="flashcard_category_category_id_fk">
+    <foreign-key id="70" parent="42" name="flashcard_category_category_id_fk">
       <ObjectId>16522</ObjectId>
       <StateNumber>698</StateNumber>
       <ColNames>category_id</ColNames>
@@ -1198,7 +1209,7 @@ default_transaction_read_only=off</Config>
       <RefKeyName>category_pk</RefKeyName>
       <RefColNames>category_id</RefColNames>
     </foreign-key>
-    <column id="70" parent="43" name="study_set_id">
+    <column id="71" parent="43" name="study_set_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1206,40 +1217,40 @@ default_transaction_read_only=off</Config>
       <DefaultExpression>nextval(&apos;study_set_study_set_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="71" parent="43" name="name">
+    <column id="72" parent="43" name="name">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>670</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="72" parent="43" name="owner_id">
+    <column id="73" parent="43" name="owner_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>670</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="73" parent="43" name="study_set_pk">
+    <index id="74" parent="43" name="study_set_pk">
       <ObjectId>16469</ObjectId>
       <StateNumber>670</StateNumber>
       <ColNames>study_set_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="74" parent="43" name="study_set_name_uindex">
+    <index id="75" parent="43" name="study_set_name_uindex">
       <ObjectId>16476</ObjectId>
       <StateNumber>671</StateNumber>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="75" parent="43" name="study_set_pk">
+    <key id="76" parent="43" name="study_set_pk">
       <ObjectId>16470</ObjectId>
       <StateNumber>670</StateNumber>
       <ColNames>study_set_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>study_set_pk</UnderlyingIndexName>
     </key>
-    <foreign-key id="76" parent="43" name="study_set_user_id_fk">
+    <foreign-key id="77" parent="43" name="study_set_user_id_fk">
       <ObjectId>16471</ObjectId>
       <StateNumber>670</StateNumber>
       <ColNames>owner_id</ColNames>
@@ -1249,35 +1260,35 @@ default_transaction_read_only=off</Config>
       <RefKeyName>app_user_pk</RefKeyName>
       <RefColNames>user_id</RefColNames>
     </foreign-key>
-    <column id="77" parent="44" name="study_set_id">
+    <column id="78" parent="44" name="study_set_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>690</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="78" parent="44" name="flashcard_id">
+    <column id="79" parent="44" name="flashcard_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>674</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="79" parent="44" name="study_set_card_pk">
+    <index id="80" parent="44" name="study_set_card_pk">
       <ObjectId>16508</ObjectId>
       <StateNumber>687</StateNumber>
       <ColNames>study_set_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="80" parent="44" name="study_set_card_pk">
+    <key id="81" parent="44" name="study_set_card_pk">
       <ObjectId>16509</ObjectId>
       <StateNumber>687</StateNumber>
       <ColNames>study_set_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>study_set_card_pk</UnderlyingIndexName>
     </key>
-    <foreign-key id="81" parent="44" name="study_set_card_study_set_study_set_id_fk">
+    <foreign-key id="82" parent="44" name="study_set_card_study_set_study_set_id_fk">
       <ObjectId>16485</ObjectId>
       <StateNumber>674</StateNumber>
       <ColNames>study_set_id</ColNames>
@@ -1287,7 +1298,7 @@ default_transaction_read_only=off</Config>
       <RefKeyName>study_set_pk</RefKeyName>
       <RefColNames>study_set_id</RefColNames>
     </foreign-key>
-    <foreign-key id="82" parent="44" name="study_set_card_flashcard_flashcard_id_fk">
+    <foreign-key id="83" parent="44" name="study_set_card_flashcard_flashcard_id_fk">
       <ObjectId>16502</ObjectId>
       <StateNumber>681</StateNumber>
       <ColNames>flashcard_id</ColNames>
@@ -1297,7 +1308,7 @@ default_transaction_read_only=off</Config>
       <RefKeyName>flashcard_pk</RefKeyName>
       <RefColNames>flashcard_id</RefColNames>
     </foreign-key>
-    <column id="83" parent="45" name="role_id">
+    <column id="84" parent="45" name="role_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1305,32 +1316,44 @@ default_transaction_read_only=off</Config>
       <DefaultExpression>nextval(&apos;user_role_role_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="84" parent="45" name="name">
+    <column id="85" parent="45" name="name">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>658</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="85" parent="45" name="user_role_pk">
+    <index id="86" parent="45" name="user_role_pk">
       <ObjectId>16432</ObjectId>
       <StateNumber>658</StateNumber>
       <ColNames>role_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="86" parent="45" name="user_role_name_uindex">
+    <index id="87" parent="45" name="user_role_name_uindex">
       <ObjectId>16434</ObjectId>
       <StateNumber>659</StateNumber>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="87" parent="45" name="user_role_pk">
+    <key id="88" parent="45" name="user_role_pk">
       <ObjectId>16433</ObjectId>
       <StateNumber>658</StateNumber>
       <ColNames>role_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>user_role_pk</UnderlyingIndexName>
     </key>
+    <argument id="89" parent="46" name="val">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+    </argument>
+    <argument id="90" parent="46" name="returnval">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+    </argument>
+    <argument id="91" parent="46">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>void|0s</DataType>
+    </argument>
   </database-model>
 </dataSource>

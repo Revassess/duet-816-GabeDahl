@@ -1,6 +1,11 @@
 package com.revature.config;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
+import org.postgresql.Driver;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  * 
@@ -14,6 +19,14 @@ import java.sql.Connection;
 public class ConnectionUtil {
 	//for singleton instance
 	private static ConnectionUtil cu;
+
+	static {
+		try {
+			DriverManager.registerDriver(new Driver());
+		} catch (SQLException throwables) {
+			throwables.printStackTrace();
+		}
+	}
 	
 	// add your jdbc url
 	public static final String URL = "jdbc:postgresql://database-2.co7alrlvzgzk.us-west-2.rds.amazonaws.com:5432/postgres";
@@ -27,14 +40,22 @@ public class ConnectionUtil {
 	public static final String TIER_3_SEQUENCE_NAME = "count_up";
 
 	// implement this method to connect to the db and return the connection object
-	public Connection connect(){
-		return null;
+	public Connection connect() throws SQLException {
+		return DriverManager.getConnection(URL, USERNAME, PASSWORD);
 	}
 
 
 	//implement this method with a callable statement that calls the absolute value sql function
-	public long callAbsoluteValueFunction(long value){
-		return value;
+	public long callAbsoluteValueFunction(long value) throws SQLException {
+
+
+		CallableStatement callableStatement = cu.connect().prepareCall("{call getABS(?)}");
+		callableStatement.setLong(1, value);
+		callableStatement.execute();
+		System.out.println("exe");
+		long finalV = callableStatement.getLong(1);
+
+		return finalV;
 	}
 	
 
