@@ -6,4 +6,4 @@ script: ./build.sh
 notifications:
     email:
     #enter your email address below
-        gabriel.dahl@revature.net
+        gabrdahl@gmail.com
