@@ -790,7 +790,7 @@ true posixrules
       <ObjectId>14008</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>username</Owner>
-      <IntrospectionStateNumber>641</IntrospectionStateNumber>
+      <IntrospectionStateNumber>645</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="rdsadmin">
@@ -886,7 +886,7 @@ default_transaction_read_only=off</Config>
       <Comment>standard public schema</Comment>
       <StateNumber>610</StateNumber>
       <Owner>username</Owner>
-      <IntrospectionStateNumber>642</IntrospectionStateNumber>
+      <IntrospectionStateNumber>646</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="23" parent="2" name="btree">
@@ -949,5 +949,12 @@ default_transaction_read_only=off</Config>
     <language id="31" parent="2" name="internal"/>
     <language id="32" parent="2" name="plpgsql"/>
     <language id="33" parent="2" name="sql"/>
+    <sequence id="34" parent="22" name="count_up">
+      <ObjectId>16408</ObjectId>
+      <Owner>username</Owner>
+      <StateNumber>644</StateNumber>
+      <SequenceIdentity>1+3</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+    </sequence>
   </database-model>
 </dataSource>
