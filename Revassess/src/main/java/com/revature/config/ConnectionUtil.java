@@ -1,11 +1,9 @@
 package com.revature.config;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
+import java.sql.*;
+
 import org.postgresql.Driver;
 import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 /**
  * 
@@ -47,15 +45,15 @@ public class ConnectionUtil {
 
 	//implement this method with a callable statement that calls the absolute value sql function
 	public long callAbsoluteValueFunction(long value) throws SQLException {
-
-
-		CallableStatement callableStatement = cu.connect().prepareCall("{call getABS(?)}");
-		callableStatement.setLong(1, value);
-		callableStatement.execute();
+		PreparedStatement statement = cu.connect().prepareStatement("select getABS(?)");
+		statement.setLong(1, value);
+		statement.execute();
 		System.out.println("exe");
-		long finalV = callableStatement.getLong(1);
-
-		return finalV;
+		ResultSet rs = statement.getResultSet();
+		while(rs.next()) {
+			return rs.getLong(1);
+		}
+		return 0;
 	}
 	
 
