@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="301b1120-4c15-41ea-a20f-e346d8471ca1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Revassess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Revassess.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +34,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="JUnit.Answer2Tests.test2 (1)">
+  <component name="RunManager" selected="JUnit.Answer1Tests.test1 (1)">
     <configuration name="Answer1Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revassess" />
       <extension name="coverage">
@@ -48,6 +46,22 @@
       <option name="PACKAGE_NAME" value="com.revature.tier2" />
       <option name="MAIN_CLASS_NAME" value="com.revature.tier2.Answer1Tests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Answer1Tests.test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Revassess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revature.tier2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revature.tier2" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.tier2.Answer1Tests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,22 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Answer3Tests.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Revassess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.revature.tier1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.revature.tier1" />
-      <option name="MAIN_CLASS_NAME" value="com.revature.tier1.Answer3Tests" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Answer4Tests.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revassess" />
       <extension name="coverage">
@@ -118,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Answer1Tests.test1 (1)" />
         <item itemvalue="JUnit.Answer2Tests.test2 (1)" />
         <item itemvalue="JUnit.Answer1Tests" />
         <item itemvalue="JUnit.Answer1Tests.test1" />
         <item itemvalue="JUnit.Answer4Tests.test4" />
-        <item itemvalue="JUnit.Answer3Tests.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +140,7 @@
       <workItem from="1597088684844" duration="46000" />
       <workItem from="1597088762209" duration="41000" />
       <workItem from="1597088810390" duration="88000" />
+      <workItem from="1597088912941" duration="319000" />
     </task>
     <servers />
   </component>
