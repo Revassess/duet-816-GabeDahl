@@ -4,8 +4,7 @@
     <list default="true" id="301b1120-4c15-41ea-a20f-e346d8471ca1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sql/answer1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/answer1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sql/setup.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/setup.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sql/answer2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/answer2.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="JUnit.Answer1Tests">
+  <component name="RunManager" selected="JUnit.Answer3Tests.test3">
     <configuration name="Answer1Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revassess" />
       <extension name="coverage">
@@ -100,17 +99,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Answer4Tests.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Answer3Tests.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revassess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.revature.tier1.*" />
+          <option name="PATTERN" value="com.revature.tier2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.revature.tier1" />
-      <option name="MAIN_CLASS_NAME" value="com.revature.tier1.Answer4Tests" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="com.revature.tier2" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.tier2.Answer3Tests" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Answer3Tests.test3" />
+        <item itemvalue="JUnit.Answer2Tests.test2 (1)" />
         <item itemvalue="JUnit.Answer1Tests" />
         <item itemvalue="JUnit.Answer1Tests.test1 (1)" />
-        <item itemvalue="JUnit.Answer2Tests.test2 (1)" />
         <item itemvalue="JUnit.Answer1Tests.test1" />
-        <item itemvalue="JUnit.Answer4Tests.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +141,7 @@
       <workItem from="1597088684844" duration="46000" />
       <workItem from="1597088762209" duration="41000" />
       <workItem from="1597088810390" duration="88000" />
-      <workItem from="1597088912941" duration="1129000" />
+      <workItem from="1597088912941" duration="1283000" />
     </task>
     <servers />
   </component>
@@ -158,22 +157,22 @@
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
     <state x="-1242" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597089881801" />
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1597089996972">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1597090167762">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597089996972" />
-    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1597089996971">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597090167762" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1597090167762">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.center/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597089996971" />
-    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1597089996971">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597090167762" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1597090167762">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.left/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597089996971" />
-    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1597089996971">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597090167762" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1597090167762">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.right/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597089996971" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right/-1920.-158.1920.1030/0.0.1536.824@-1920.-158.1920.1030" timestamp="1597090167762" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597089679709">
       <screen x="-1920" y="-158" width="1920" height="1030" />
     </state>
